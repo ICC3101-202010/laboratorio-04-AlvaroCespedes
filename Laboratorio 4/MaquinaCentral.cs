@@ -6,9 +6,13 @@ namespace Laboratorio_4
 {
     class MaquinaCentral : IAviso
     {
-        public void Aviso()
+        public void Aviso() // Creo que reiniciar es una interfaz
         {
             Console.WriteLine("Una Maquina se ha quedado sin memoria");
+        }
+        public void ApagarOrden()
+        {
+              
         }
     }
 }
