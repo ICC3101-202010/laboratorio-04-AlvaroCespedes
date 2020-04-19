@@ -4,8 +4,7 @@ using System.Text;
 
 namespace Laboratorio_4
 {
-    public abstract class AbsMaquinaCentral
+    class MaquinaCentral
     {
-
     }
 }
