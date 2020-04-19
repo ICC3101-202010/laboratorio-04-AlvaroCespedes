@@ -6,19 +6,30 @@ namespace Laboratorio_4
 {
     class Almacenamiento : AbsMaquina
     {
-        public Almacenamiento(string name, int memoria)
+        public Almacenamiento(string name)
         {
             this.name = name;
-            this.memoria = memoria;
         }
         public override void Encendido()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Maquina Almacenamiento Encendida");
         }
 
         public override void Apagado()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Maquina Almacenaiento Apagada");
+        }
+        public override void Reiniciar()
+        {
+            Console.WriteLine("Maquina Almacenamiento Reiniciada");
+        }
+        public Almacenamiento()
+        {
+            Console.WriteLine("Pieza Almacenada");
+        }
+        public override void AgregarMemoria()
+        {
+            Console.WriteLine("Se ha agregado a la memoria");
         }
 
     }

@@ -9,16 +9,27 @@ namespace Laboratorio_4
         public Recepcion(string name, int memoria)
         {
             this.name = name;
-            this.memoria = memoria;
         }
         public override void Encendido()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Maquina Recepcion Encendida");
         }
 
         public override void Apagado()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Maquina Recepcion Apagada");
+        }
+        public override void Reiniciar()
+        {
+            Console.WriteLine("Maquina Recepcion Reiniciada");
+        }
+        public Recepcion()
+        {
+            Console.WriteLine("Pieza recepcionada");
+        }
+        public override void AgregarMemoria()
+        {
+            Console.WriteLine("Se ha agregado a la memoria");
         }
     }
 }

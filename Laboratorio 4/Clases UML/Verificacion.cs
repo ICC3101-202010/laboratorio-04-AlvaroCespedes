@@ -9,16 +9,27 @@ namespace Laboratorio_4
         public Verificacion(string name, int memoria)
         {
             this.name = name;
-            this.memoria = memoria;
         }
         public override void Encendido()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Maquina Verificacio Encendida");
         }
 
         public override void Apagado()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Maquina Verificacion Apagada");
+        }
+        public override void Reiniciar()
+        {
+            Console.WriteLine("Maquina Recepcion Reiniciada");
+        }
+        public Verificacion()
+        {
+            Console.WriteLine("Pieza Verificada");
+        }
+        public override void AgregarMemoria()
+        {
+            Console.WriteLine("Se ha agregado a la memoria");
         }
     }
 }

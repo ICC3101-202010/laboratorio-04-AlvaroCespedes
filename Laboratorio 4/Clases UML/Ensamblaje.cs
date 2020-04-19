@@ -6,19 +6,29 @@ namespace Laboratorio_4
 {
     class Ensamblaje : AbsMaquina
     {
-        public Ensamblaje(string name, int memoria)
+        public Ensamblaje(string name)
         {
             this.name = name;
-            this.memoria = memoria;
         }
         public override void Encendido()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Maquina Ensamblaje Encendida");
         }
-
         public override void Apagado()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Maquina Ensamblaje Apagada");
+        }
+        public override void Reiniciar()
+        {
+            Console.WriteLine("Maquina Ensamblaje Reiniciada");
+        }
+        public Ensamblaje()
+        {
+            Console.WriteLine("Pieza Ensamblada");
+        }
+        public override void AgregarMemoria()
+        {
+            Console.WriteLine("Se ha agregado a la memoria");
         }
     }
 }

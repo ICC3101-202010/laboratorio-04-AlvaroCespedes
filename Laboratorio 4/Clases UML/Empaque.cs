@@ -9,16 +9,27 @@ namespace Laboratorio_4
         public Empaque(string name, int memoria)
         {
             this.name = name;
-            this.memoria = memoria;
         }
         public override void Encendido()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Maquina Empaque Encendida");
         }
 
         public override void Apagado()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Maquina Empaque Apagada");
+        }
+        public override void Reiniciar()
+        {
+            Console.WriteLine("Maquina Empaque Reiniciada");
+        }
+        public Empaque()
+        {
+            Console.WriteLine("Se ha empadado la pieza");
+        }
+        public override void AgregarMemoria()
+        {
+            Console.WriteLine("Se ha agregado a la memoria");
         }
     }
 }
